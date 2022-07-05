@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family App</title>
+</head>
+<body style="background-color: rgba(22, 75, 15, 0.507);">
+    <div style="background-color: rgba(69, 153, 69, 0.603);">
+        {% for p in parientes %}
+            {% if p.nombre == 'Tadeo' %}
+                <p style="font-size:large;font-style: normal;">
+
+                    <b>Nombre:</b> {{p.nombre}}.<br>
+                    <b>Apellido:</b> {{p.apellido}}.<br>
+                    <b>Fecha de nacimiento:</b> {{p.birth_date}}.<br>
+                    <b>Edad:</b> {{p.edad}}.<br>
+                    <b>Ocupacion:</b> {{p.ocupacion}}.
+        
+                </p>
+                <h4><strong style='font-style: normal; font-family:Arial, Helvetica, sans-serif'>Tadeo es quien programo este sitio web, gracias por visitarlo.</strong></h4>
+            {% endif %}
+        {%endfor%}
+    </div>
+    
+</body>
+</html>

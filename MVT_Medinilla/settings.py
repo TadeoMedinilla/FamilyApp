@@ -55,7 +55,7 @@ ROOT_URLCONF = 'MVT_Medinilla.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/Users/Tadeo/Documents/Python/Plantillas/'],
+        'DIRS': ['C:/Users/Tadeo/Documents/Python/MVT_Medinilla/FamilyApp/Plantillas'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
